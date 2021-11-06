@@ -74,8 +74,34 @@ public class App {
 				} else if(command.equals("logout")) {
 					logout();
 						
+				} else if(command.equals("page")) {
+					page();
 				}
 			}
+		}
+
+		private void page() {
+			
+			System.out.println("번호 : " + a.getNo());
+			System.out.println("제목 : " + a.getTitle());
+			System.out.println("작성자 : " + a.getTitle());
+			System.out.println("조회수 : " + a.getTitle());
+			System.out.println("좋아요 : " + a.getTitle());
+			
+			System.out.print("페이징 명령어를 입력해주세요 ((prev : 이전, next : 다음, go : 선택, back : 뒤로가기): ");
+			String pagecmd = sc.nextLine();
+			
+			if(pagecmd.equals("prev")) {
+				
+			} else if(pagecmd.equals("next")) {
+				
+			} else if(pagecmd.equals("go")) {
+				
+			} else if(pagecmd.equals("back")) {
+				
+			}
+			
+			
 		}
 
 		private void logout() {
